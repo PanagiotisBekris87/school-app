@@ -23,6 +23,8 @@ public record TeacherInsertDTO(
         @NotNull(message = "Η περιοχή δεν μπορεί να είναι κενή.")
         Long regionId
 ) {
+
+    //static factory για να δίνουμε ένα κενό instance στην αρχή
     public static TeacherInsertDTO empty() {
         return new TeacherInsertDTO("","","", 0L);
     }
