@@ -22,7 +22,7 @@ public abstract class AbstractEntity {
 
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false, columnDefinition = "DATETIME")
-    private Instant createdAt;          // UTC
+    private Instant createdAt;          // Το instant είναι μία στιγμή στο χρόνο και είναι πάντα UTC
 
 
     @Column(name = "updated_at", nullable = false, columnDefinition = "DATETIME")
