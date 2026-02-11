@@ -7,6 +7,8 @@ import jakarta.validation.constraints.Size;
 
 public record TeacherInsertDTO(
 
+        // Προσοχή είμαστε ακόμη μέσα στις παρενθέσεις
+
         @NotNull(message = "Το όνομα δεν μπορεί να είναι κενό")
         @Size(min = 2, message = "Το όνομα πρέπει να περιέχει τουλάχιστον 2 χαρακτήρες")
         String firstname,
